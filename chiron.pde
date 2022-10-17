@@ -5,11 +5,12 @@ void setup(){
 
 void draw(){
   background(#111111);
-   noStroke();
+  noStroke();
+  fill(#f1f1f1);
   float x = random(width);
   float y = random(height);
   background(random(0, 10));
-  ellipse(x, y, 1, 1);
+  ellipse(x, y, 3, 3);
   ellipse(x, y, 2, 2);
   ellipse(x, y, 1, 1);
   rectMode(RADIUS);
@@ -29,7 +30,6 @@ void draw(){
   arc(0, 0, width/2, height /2, radians(45), radians(315), OPEN);
   arc(0, 0, width/2.5, height/2.5, radians(45), radians(315), OPEN);
   pop();
-  fill(#f1f1f1);
   triangle((float)width - 100, (float)height / 2 + 25, (float)width - 100, (float)height / 2 - 25, (float)width - 75, (float)height/2);
   
 }
